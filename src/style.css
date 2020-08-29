@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #34495E;
+    margin: 0;
+    padding: 0;
+}
+
+movie-desc {
+    margin: 16px auto;
+    width: 80%;
+    max-width: 1366px;
+}
+
+movie-list {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto;
+    margin: 16px auto;
+    width: 80%;
+    max-width: 1366px;
+}
+
+/* tampilan tablet */
+@media screen and (max-width: 768px){
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    movie-list {
+        grid-gap: 10px;
+        grid-template-columns: auto auto auto auto;
+        width: 100%;
+    }
+    movie-desc {
+        width: 100%;
+    }
+}
+
+/* tampilan hp */
+@media screen and (max-width: 576px){
+    main{
+        width: 90%;
+        margin: auto;
+    }
+    movie-list {
+        grid-gap: 10px;
+        grid-template-columns: auto auto;
+        width: 100%;
+    }
+    movie-desc {
+        width: 100%;
+    }
+}
